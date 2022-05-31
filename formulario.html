@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="pt-br">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="estilo1.css" rel="stylesheet">
+	<title>formulário</title>
+</head>
+
+<body>
+	<div id="ma">
+		<img id="lo" src="imagens/logo.png">
+		<img id="menu" src="imagens/menu.png">
+	</div>
+	<br>
+	<form action="enviar.php" method="post" autocomplete="on">
+		<label for="name">Nome completo:</label>
+		<br>
+		<input type="text" id="name" name="name" value="Victor">
+		<br><br>
+		<label>Gênero:</label>
+		<br>
+		<input type="radio" id="f" name="genero" value="feminino">
+		<label for="f">Feminino</label>
+		<br>
+		<input type="radio" id="m" name="genero" value="masculino">
+		<label for="m">Masculino</label>
+		<br><br>
+		<label for="estados">Estado:</label><br>
+		<input list="estados" id="estados" name="estado">
+		<datalist id="estados">
+			<option value="AC">
+			<option value="AL">
+			<option value="AM">
+			<option value="BA">
+			<option value="PA">
+			<option value="CE">
+			<option value="GO">
+			<option value="MA">
+		</datalist>
+		<br><br>
+		<label>Quantos irmãos vocês tem?</label>
+		<br>
+		<input type="checkbox" id="irmao1" name="irmao[1]" value="um irmão">
+		<label for="irmao1">Apenas um irmão</label>
+		<br>
+		<input type="checkbox" id="irmao2" name="irmao[2]" value="dois irmãos">
+		<label for="irmao2">Dois irmãos</label>
+		<br>
+		<input type="checkbox" id="irmao3" name="irmao[3]" value="mais de três irmãos">
+		<label for="irmao3">Mais de três irmãos</label>
+		<br><br>
+		<input type="submit" name="enviar" value="Enviar">
+	</form>
+	<div id="logos">
+		<a href="https://www.tiktok.com/pt-BR/"><img class="im" src="imagens/tiktok.png" alt="Logo do Tiktok"></a>
+		<a href="https://twitter.com/home"><img class="im" src="imagens/twitter.png" alt="Logo do Twitter"></a>
+		<a href="https://pt-br.facebook.com"><img class="im" src="imagens/facebook.png" alt="Logo do Facebook"></a>
+		<a href="https://www.instagram.com"><img class="im" src="imagens/instagram.png" alt="Logo do Instagran"></a>
+	</div>
+
+	<footer>
+		<p id="oi">Copyright © 2022</p>
+	</footer>
+</body>
+
+</html>
